@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hotter or Colder???
+</title>
+
+<link rel="stylesheet" href="main.css" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="application.js"></script>
+</head>
+<body>
+<div id="logo">HotterOrColder</div>
+<div id="container">	
+<FORM NAME="test">
+<H2>Choose a number between 1 and 10.</H2>
+<INPUT TYPE="text" NAME="inputbox" VALUE=""
+onkeypress="if(this.value.match(/\D/)) this.value=this.value.replace(/\D/g,'')"
+ onkeyup   ="if(this.value.match(/\D/)) this.value=this.value.replace(/\D/g,'')"
+><P>
+<INPUT TYPE="button" NAME="button" Value="Guess" onClick="testResults(this.form)">
+<input id="clickMe" type="button" value="Play again" onclick="doFunction();" />
+</form>
+
+</div>
+<div id="message"></div>
+</body>
+</html>
